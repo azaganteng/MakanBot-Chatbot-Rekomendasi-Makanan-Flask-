@@ -1,0 +1,96 @@
+{
+  "id": "makanbot",
+  "name": "MakanBot",
+  "bot_name": "MakanBot",
+  "avatar": "🍽️",
+  "color": "#ea580c",
+  "description": "Asisten rekomendasi makanan, menu harian, bahan makanan, dan resep sederhana.",
+  "greeting": "Halo! Selamat datang di MakanBot. Ada yang bisa saya bantu hari ini?",
+  "suggestions": ["Aku mau makan apa?", "Rekomendasi makanan pedas", "Enaknya sarapan apa?", "Bagaimana cara membuat nasi goreng?"],
+  "fallback": [
+    "Maaf, saya belum memahami pertanyaan tersebut. Coba tanyakan tentang rekomendasi makanan atau resep.",
+    "Saya belum memiliki jawaban untuk itu. Silakan tanyakan menu, bahan makanan, atau resep kepada MakanBot."
+  ],
+  "intents": [
+    {
+      "tag": "salam",
+      "patterns": ["halo", "hai makanbot", "selamat pagi", "selamat siang", "selamat malam", "assalamualaikum"],
+      "responses": ["Halo! Selamat datang di MakanBot. Ada yang bisa saya bantu?", "Hai! MakanBot siap membantu mencari ide makanan untukmu."]
+    },
+    {
+      "tag": "rekomendasi_makanan",
+      "patterns": ["aku mau makan apa", "ada rekomendasi makanan", "rekomendasi makanan", "enaknya makan apa", "saran makanan yang enak", "tolong pilihkan menu untukku"],
+      "responses": ["Kamu bisa mencoba nasi goreng, ayam geprek, bakso, atau mie ayam!", "Kalau bingung, coba nasi goreng, ayam geprek, bakso, atau mie ayam."]
+    },
+    {
+      "tag": "makanan_pedas",
+      "patterns": ["aku ingin makanan pedas", "ada makanan pedas", "rekomendasi makanan pedas", "makanan pedas yang enak", "aku suka makanan pedas", "aku ingin sesuatu yang pedas"],
+      "responses": ["Bagaimana kalau mencoba seblak, ayam geprek, atau mie level?", "Untuk pencinta pedas, kamu bisa mencoba seblak, ayam geprek, atau mie level."]
+    },
+    {
+      "tag": "makanan_manis",
+      "patterns": ["aku ingin makanan manis", "ada makanan manis", "rekomendasi makanan manis", "ingin makanan yang manis", "camilan manis apa", "ada dessert yang manis"],
+      "responses": ["Kamu bisa mencoba martabak manis, pancake, puding, atau es krim.", "Untuk makanan manis, coba martabak, pancake, puding, atau es krim."]
+    },
+    {
+      "tag": "makanan_murah",
+      "patterns": ["makanan murah apa yang enak", "rekomendasi makanan murah", "makanan enak harga murah", "mau makanan yang murah", "menu murah untuk makan", "uangku sedang terbatas"],
+      "responses": ["Coba nasi telur, tempe goreng, pecel, atau mie ayam sederhana.", "Pilihan hemat yang enak antara lain nasi telur, tempe goreng, pecel, dan mie ayam."]
+    },
+    {
+      "tag": "makanan_sehat",
+      "patterns": ["rekomendasi makanan sehat", "aku ingin makanan sehat", "makanan sehat dong", "menu sehat apa", "makanan sehat yang enak", "aku mau makan bergizi"],
+      "responses": ["Kamu bisa mencoba gado-gado, salad sayur, sup ayam, atau pecel.", "Untuk pilihan sehat, coba gado-gado, salad sayur, sup ayam, atau pecel."]
+    },
+    {
+      "tag": "menu_sarapan",
+      "patterns": ["enaknya sarapan apa", "menu sarapan apa", "rekomendasi sarapan", "mau makan sarapan", "sarapan yang enak", "apa menu pagi yang praktis"],
+      "responses": ["Untuk sarapan, kamu bisa memilih bubur ayam, nasi kuning, roti telur, atau oatmeal.", "Ide sarapan hari ini: bubur ayam, nasi kuning, roti telur, atau oatmeal."]
+    },
+    {
+      "tag": "menu_makan_siang",
+      "patterns": ["makan siang enaknya apa", "menu makan siang", "rekomendasi makan siang", "mau makan siang apa", "makanan untuk siang hari", "tolong pilihkan menu untuk siang"],
+      "responses": ["Kamu bisa mencoba nasi ayam, soto, rawon, atau nasi padang.", "Untuk makan siang, nasi ayam, soto, rawon, dan nasi padang bisa menjadi pilihan."]
+    },
+    {
+      "tag": "menu_makan_malam",
+      "patterns": ["makan malam enaknya apa", "menu makan malam", "rekomendasi makan malam", "mau makan malam apa", "makanan untuk malam hari"],
+      "responses": ["Bagaimana kalau mencoba sup ayam, nasi goreng, capcay, atau sate?", "Menu malam yang bisa dicoba adalah sup ayam, nasi goreng, capcay, atau sate."]
+    },
+    {
+      "tag": "makanan_berkuah",
+      "patterns": ["aku ingin makanan berkuah", "rekomendasi makanan berkuah", "makanan yang ada kuahnya", "ingin makan yang berkuah", "menu berkuah apa"],
+      "responses": ["Kamu bisa mencoba bakso, soto, mie ayam, atau sop iga.", "Kalau ingin makanan berkuah, coba bakso, soto, mie ayam, atau sop iga."]
+    },
+    {
+      "tag": "makanan_tanpa_nasi",
+      "patterns": ["aku bosan makan nasi", "makanan tanpa nasi", "rekomendasi makanan tanpa nasi", "ingin makan selain nasi", "menu yang tidak pakai nasi"],
+      "responses": ["Coba mie goreng, kentang goreng, roti isi, atau pasta.", "Sebagai pengganti nasi, kamu bisa memilih mie goreng, kentang goreng, roti isi, atau pasta."]
+    },
+    {
+      "tag": "bahan_makanan",
+      "patterns": ["aku punya telur dan mie bisa masak apa", "telur dan mie dimasak apa", "masak dengan bahan telur dan mie", "resep dari telur dan mie", "punya bahan telur mie"],
+      "responses": ["Kamu bisa membuat mie telur, omelet mie, atau martabak mie.", "Dengan telur dan mie, kamu dapat membuat mie telur, omelet mie, atau martabak mie."]
+    },
+    {
+      "tag": "resep_makanan",
+      "patterns": ["bagaimana cara membuat nasi goreng", "resep nasi goreng", "cara masak nasi goreng", "cara membuat makanan", "minta resep makanan"],
+      "responses": ["Tumis bumbu, masukkan nasi, tambahkan kecap dan bumbu sesuai selera, lalu aduk hingga matang.", "Untuk nasi goreng, tumis bumbu terlebih dahulu, masukkan nasi dan kecap, lalu aduk sampai matang."]
+    },
+    {
+      "tag": "terima_kasih",
+      "patterns": ["terima kasih", "makasih", "terima kasih makanbot", "makasih atas bantuannya", "thanks makanbot"],
+      "responses": ["Sama-sama! Semoga rekomendasi makanannya membantu.", "Dengan senang hati! Semoga kamu menemukan makanan yang enak."]
+    },
+    {
+      "tag": "perpisahan",
+      "patterns": ["dadah", "sampai jumpa", "selamat tinggal", "aku pergi dulu", "bye makanbot", "sampai bertemu lagi"],
+      "responses": ["Sampai jumpa! Jangan lupa makan tepat waktu.", "Dadah! Semoga harimu menyenangkan dan jangan lupa makan."]
+    },
+    {
+      "tag": "identitas",
+      "patterns": ["siapa kamu", "kamu siapa", "apa itu makanbot", "makanbot bisa apa", "kamu dapat membantu apa"],
+      "responses": ["Saya {nama_bot}, asisten yang membantu memberikan rekomendasi makanan dan resep sederhana.", "Saya {nama_bot}. Saya bisa membantu mencari ide menu, makanan berdasarkan selera, dan resep sederhana."]
+    }
+  ]
+}

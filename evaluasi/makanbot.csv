@@ -1,0 +1,18 @@
+kalimat,intent
+aku lapar tapi bingung mau makan,rekomendasi_makanan
+tolong pilihkan menu untukku,rekomendasi_makanan
+aku ingin sesuatu yang pedas,makanan_pedas
+ada dessert yang manis,makanan_manis
+uangku sedang terbatas,makanan_murah
+aku mau makan bergizi,makanan_sehat
+apa menu pagi yang praktis,menu_sarapan
+tolong pilihkan menu untuk siang,menu_makan_siang
+aku ingin makan malam,menu_makan_malam
+aku ingin makanan dengan kuah,makanan_berkuah
+aku tidak mau makan nasi,makanan_tanpa_nasi
+di rumah ada telur serta mie,bahan_makanan
+tolong ajari membuat nasi goreng,resep_makanan
+terima kasih banyak,terima_kasih
+sampai bertemu lagi,perpisahan
+kamu sebenarnya siapa,identitas
+jadwal kereta hari ini,fallback
